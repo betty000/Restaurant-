@@ -38,57 +38,81 @@
 
   <div class="slideshow-container">
     <section id="home">
-      <div>
-        <h1>Welcome to Wangari Bar and Restaurant</h1>
-        <p>Experience the flavors of Ethiopia in a warm and inviting atmosphere.</p>
-        <a href="#menu" class="cta-btn">Explore Our Menu</a>
+      <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+          <div class="col-xl-8 col-lg-10 col-md-12">
+            <div class="text-center">
+              <h1 class="display-1 fw-bold mb-4">Welcome to Wangari Bar and Restaurant</h1>
+              <p class="lead fs-3 mb-5">Experience the flavors of Ethiopia in a warm and inviting atmosphere.</p>
+              <a href="#menu" class="btn btn-primary btn-lg px-5 py-3">Explore Our Menu</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="menu">
       <div class="container">
-        <h2 class="text-center mb-5">Our Menu</h2>
+        <h2 class="text-center mb-5 display-4 fw-bold">Our Menu</h2>
         <div class="row g-4">
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="menu-item">
-              <i class="fas fa-bread-slice"></i>
-              <h3>Injera</h3>
-              <p>Sour fermented flatbread, served with various stews.</p>
+            <div class="card h-100 shadow-lg border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-bread-slice fa-3x mb-3 text-primary"></i>
+                <h5 class="card-title fw-bold">Injera</h5>
+                <p class="card-text">Sour fermented flatbread, served with various stews.</p>
+                <span class="badge bg-primary">Traditional</span>
+              </div>
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="menu-item">
-              <i class="fas fa-drumstick-bite"></i>
-              <h3>Doro Wat</h3>
-              <p>Spicy chicken stew with hard-boiled eggs, a national dish.</p>
+            <div class="card h-100 shadow-lg border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-drumstick-bite fa-3x mb-3 text-danger"></i>
+                <h5 class="card-title fw-bold">Doro Wat</h5>
+                <p class="card-text">Spicy chicken stew with hard-boiled eggs, a national dish.</p>
+                <span class="badge bg-danger">Spicy</span>
+              </div>
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="menu-item">
-              <i class="fas fa-utensils"></i>
-              <h3>Tibs</h3>
-              <p>Sautéed beef or lamb with onions, peppers, and spices.</p>
+            <div class="card h-100 shadow-lg border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-utensils fa-3x mb-3 text-success"></i>
+                <h5 class="card-title fw-bold">Tibs</h5>
+                <p class="card-text">Sautéed beef or lamb with onions, peppers, and spices.</p>
+                <span class="badge bg-success">Savory</span>
+              </div>
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="menu-item">
-              <i class="fas fa-meat"></i>
-              <h3>Kitfo</h3>
-              <p>Minced raw beef marinated in mitmita and niter kibbeh.</p>
+            <div class="card h-100 shadow-lg border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-meat fa-3x mb-3 text-warning"></i>
+                <h5 class="card-title fw-bold">Kitfo</h5>
+                <p class="card-text">Minced raw beef marinated in mitmita and niter kibbeh.</p>
+                <span class="badge bg-warning text-dark">Raw</span>
+              </div>
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="menu-item">
-              <i class="fas fa-leaf"></i>
-              <h3>Beyainatu</h3>
-              <p>A variety of vegetarian dishes including lentils and vegetables.</p>
+            <div class="card h-100 shadow-lg border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-leaf fa-3x mb-3 text-info"></i>
+                <h5 class="card-title fw-bold">Beyainatu</h5>
+                <p class="card-text">A variety of vegetarian dishes including lentils and vegetables.</p>
+                <span class="badge bg-info">Vegetarian</span>
+              </div>
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="menu-item">
-              <i class="fas fa-beer"></i>
-              <h3>Tela</h3>
-              <p>Traditional Ethiopian beer, light and refreshing.</p>
+            <div class="card h-100 shadow-lg border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-beer fa-3x mb-3 text-secondary"></i>
+                <h5 class="card-title fw-bold">Tela</h5>
+                <p class="card-text">Traditional Ethiopian beer, light and refreshing.</p>
+                <span class="badge bg-secondary">Beverage</span>
+              </div>
             </div>
           </div>
         </div>
@@ -99,8 +123,29 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-10 col-lg-8 col-md-10 col-sm-12">
-            <h2 class="text-center mb-4">About Us</h2>
-            <p class="text-center">Wangari Bar and Restaurant brings the rich culinary heritage of Ethiopia to your table. Our dishes are prepared with authentic ingredients and traditional methods, offering a taste of Ethiopia's vibrant culture.</p>
+            <h2 class="text-center mb-4 display-4 fw-bold">About Us</h2>
+            <div class="card shadow-lg border-0 bg-transparent">
+              <div class="card-body text-center">
+                <p class="lead fs-4">Wangari Bar and Restaurant brings the rich culinary heritage of Ethiopia to your table. Our dishes are prepared with authentic ingredients and traditional methods, offering a taste of Ethiopia's vibrant culture.</p>
+                <div class="row mt-4">
+                  <div class="col-md-4">
+                    <i class="fas fa-utensils fa-2x mb-2 text-primary"></i>
+                    <h5>Authentic Cuisine</h5>
+                    <p>Traditional Ethiopian flavors</p>
+                  </div>
+                  <div class="col-md-4">
+                    <i class="fas fa-heart fa-2x mb-2 text-danger"></i>
+                    <h5>Family Atmosphere</h5>
+                    <p>Warm and welcoming environment</p>
+                  </div>
+                  <div class="col-md-4">
+                    <i class="fas fa-leaf fa-2x mb-2 text-success"></i>
+                    <h5>Fresh Ingredients</h5>
+                    <p>Locally sourced and organic</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -110,11 +155,35 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8 col-lg-6 col-md-8 col-sm-12">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <div class="text-center">
-              <p><i class="fas fa-map-marker-alt me-2"></i>Address: 123 Addis Ababa St, Ethiopia</p>
-              <p><i class="fas fa-phone me-2"></i>Phone: +251 123 456 789</p>
-              <p><i class="fas fa-envelope me-2"></i>Email: info@wangarirestaurant.com</p>
+            <h2 class="text-center mb-4 display-4 fw-bold">Contact Us</h2>
+            <div class="card shadow-lg border-0 bg-transparent">
+              <div class="card-body text-center">
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <i class="fas fa-map-marker-alt fa-3x mb-3 text-primary"></i>
+                    <h5>Address</h5>
+                    <p>123 Addis Ababa St, Ethiopia</p>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <i class="fas fa-phone fa-3x mb-3 text-success"></i>
+                    <h5>Phone</h5>
+                    <p>+251 123 456 789</p>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <i class="fas fa-envelope fa-3x mb-3 text-info"></i>
+                    <h5>Email</h5>
+                    <p>info@wangarirestaurant.com</p>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <h5>Follow Us</h5>
+                  <div class="social-links">
+                    <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-outline-info me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn btn-outline-danger"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
