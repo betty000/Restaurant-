@@ -1,75 +1,14 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slideshow-container section');
-const container = document.querySelector('.slideshow-container');
-const totalSlides = slides.length;
-
-// Function to update slide position
-function updateSlide() {
-  container.style.transform = `translateX(-${currentSlide * 100}vw)`;
-  // Update nav active state
-  document.querySelectorAll('nav a').forEach((link, index) => {
-    link.classList.toggle('active', index === currentSlide);
-  });
-  // Update section visibility
-  slides.forEach((slide, index) => {
-    slide.classList.toggle('visible', index === currentSlide);
-  });
-}
-
-// Automatic slideshow
-let slideInterval = setInterval(() => {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  updateSlide();
-}, 5000); // Change slide every 5 seconds
-
-// Reset interval on manual navigation
-function resetSlideInterval() {
-  clearInterval(slideInterval);
-  slideInterval = setInterval(() => {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateSlide();
-  }, 5000);
-}
-
-// Next slide
-document.getElementById('next-slide').addEventListener('click', () => {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  updateSlide();
-  resetSlideInterval();
-});
-
-// Previous slide
-document.getElementById('prev-slide').addEventListener('click', () => {
-  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-  updateSlide();
-  resetSlideInterval();
-});
-
-// Nav links to jump to slides
-document.querySelectorAll('nav a').forEach((link, index) => {
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
-    currentSlide = index;
-    updateSlide();
-    resetSlideInterval();
+    const targetId = link.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
   });
 });
-
-// Keyboard navigation
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowRight') {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateSlide();
-    resetSlideInterval();
-  } else if (e.key === 'ArrowLeft') {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    updateSlide();
-    resetSlideInterval();
-  }
-});
-
-// Initial setup
-updateSlide();
 
 // Add fade-in to menu items on menu slide
 const menuObserver = new IntersectionObserver((entries) => {

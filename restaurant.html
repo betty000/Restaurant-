@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wangari Bar and Restaurant</title>
+  <title>Wangari Bar & Restaurant</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,7 +12,11 @@
   <header class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand logo" href="#">
-        <i class="fas fa-utensils"></i> Wangari
+        <div class="logo-circle">
+          <i class="fas fa-leaf logo-icon"></i>
+          <span class="logo-letter">W</span>
+        </div>
+        Wangari
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,7 +30,10 @@
             <a class="nav-link" href="#menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#reservations">Reservations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -34,213 +41,280 @@
         </ul>
       </div>
     </div>
+    <div class="secondary-nav">
+      <div class="container-fluid">
+        <div class="social-links">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <div class="slideshow-container">
-    <section id="home">
-      <div class="container">
-        <div class="row justify-content-center align-items-center min-vh-100">
-          <div class="col-xl-8 col-lg-10 col-md-12">
-            <div class="text-center">
-              <h1 class="display-1 fw-bold mb-4">Welcome to Wangari Bar and Restaurant</h1>
-              <p class="lead fs-3 mb-5">Experience the flavors of Ethiopia in a warm and inviting atmosphere.</p>
-              <a href="#menu" class="btn btn-primary btn-lg px-5 py-3">Explore Our Menu</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="menu">
-      <div class="container">
-        <h2 class="text-center mb-5 display-4 fw-bold">Our Menu</h2>
-        <div class="row g-4">
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="card h-100 shadow-lg border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-bread-slice fa-3x mb-3 text-primary"></i>
-                <h5 class="card-title fw-bold">Injera</h5>
-                <p class="card-text">Sour fermented flatbread, served with various stews.</p>
-                <span class="badge bg-primary">Traditional</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="card h-100 shadow-lg border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-drumstick-bite fa-3x mb-3 text-danger"></i>
-                <h5 class="card-title fw-bold">Doro Wat</h5>
-                <p class="card-text">Spicy chicken stew with hard-boiled eggs, a national dish.</p>
-                <span class="badge bg-danger">Spicy</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="card h-100 shadow-lg border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-utensils fa-3x mb-3 text-success"></i>
-                <h5 class="card-title fw-bold">Tibs</h5>
-                <p class="card-text">Sautéed beef or lamb with onions, peppers, and spices.</p>
-                <span class="badge bg-success">Savory</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="card h-100 shadow-lg border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-meat fa-3x mb-3 text-warning"></i>
-                <h5 class="card-title fw-bold">Kitfo</h5>
-                <p class="card-text">Minced raw beef marinated in mitmita and niter kibbeh.</p>
-                <span class="badge bg-warning text-dark">Raw</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="card h-100 shadow-lg border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-leaf fa-3x mb-3 text-info"></i>
-                <h5 class="card-title fw-bold">Beyainatu</h5>
-                <p class="card-text">A variety of vegetarian dishes including lentils and vegetables.</p>
-                <span class="badge bg-info">Vegetarian</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div class="card h-100 shadow-lg border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-beer fa-3x mb-3 text-secondary"></i>
-                <h5 class="card-title fw-bold">Tela</h5>
-                <p class="card-text">Traditional Ethiopian beer, light and refreshing.</p>
-                <span class="badge bg-secondary">Beverage</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-10 col-lg-8 col-md-10 col-sm-12">
-            <h2 class="text-center mb-4 display-4 fw-bold">About Us</h2>
-            <div class="card shadow-lg border-0 bg-transparent">
-              <div class="card-body text-center">
-                <p class="lead fs-4">Wangari Bar and Restaurant brings the rich culinary heritage of Ethiopia to your table. Our dishes are prepared with authentic ingredients and traditional methods, offering a taste of Ethiopia's vibrant culture.</p>
-                <div class="row mt-4">
-                  <div class="col-md-4">
-                    <i class="fas fa-utensils fa-2x mb-2 text-primary"></i>
-                    <h5>Authentic Cuisine</h5>
-                    <p>Traditional Ethiopian flavors</p>
-                  </div>
-                  <div class="col-md-4">
-                    <i class="fas fa-heart fa-2x mb-2 text-danger"></i>
-                    <h5>Family Atmosphere</h5>
-                    <p>Warm and welcoming environment</p>
-                  </div>
-                  <div class="col-md-4">
-                    <i class="fas fa-leaf fa-2x mb-2 text-success"></i>
-                    <h5>Fresh Ingredients</h5>
-                    <p>Locally sourced and organic</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-8 col-lg-6 col-md-8 col-sm-12">
-            <h2 class="text-center mb-4 display-4 fw-bold">Contact Us</h2>
-            <div class="card shadow-lg border-0 bg-transparent">
-              <div class="card-body text-center">
-                <div class="row">
-                  <div class="col-md-4 mb-3">
-                    <i class="fas fa-map-marker-alt fa-3x mb-3 text-primary"></i>
-                    <h5>Address</h5>
-                    <p>123 Addis Ababa St, Ethiopia</p>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <i class="fas fa-phone fa-3x mb-3 text-success"></i>
-                    <h5>Phone</h5>
-                    <p>+251 123 456 789</p>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <i class="fas fa-envelope fa-3x mb-3 text-info"></i>
-                    <h5>Email</h5>
-                    <p>info@wangarirestaurant.com</p>
-                  </div>
-                </div>
-                <div class="mt-4">
-                  <h5>Follow Us</h5>
-                  <div class="social-links">
-                    <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-outline-info me-2"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn btn-outline-danger"><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-  </div>
-
-  <button id="prev-slide" class="slide-btn">&larr;</button>
-  <button id="next-slide" class="slide-btn">&rarr;</button>
-
-  <footer class="bg-dark text-white py-5">
+  <section id="home">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
-          <h5 class="mb-3">Rate & Review Us</h5>
-          <div class="stars mb-3" id="rating-stars">
-            <i class="far fa-star" data-rating="1"></i>
-            <i class="far fa-star" data-rating="2"></i>
-            <i class="far fa-star" data-rating="3"></i>
-            <i class="far fa-star" data-rating="4"></i>
-            <i class="far fa-star" data-rating="5"></i>
+      <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-xl-8 col-lg-10 col-md-12">
+          <div class="text-center">
+            <h1 class="display-1 fw-bold mb-4 orange-text">WANGARI BAR & RESTAURANT</h1>
+            <p class="lead fs-3 mb-3 text-light">Authentic Flavors & Cocktails</p>
+            <p class="fs-5 mb-5 text-light">Experience the vibrant tastes of Kenya in an elegant atmosphere</p>
+            <a href="#menu" class="btn btn-outline-orange btn-lg px-5 py-3">Explore Our Menu</a>
           </div>
-          <p class="mb-0" id="rating-text">Click on the stars to rate us!</p>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
-          <h5 class="mb-3">Leave a Comment</h5>
-          <form id="comment-form">
-            <div class="mb-2">
-              <input type="text" class="form-control form-control-sm" id="comment-name" placeholder="Your Name" required>
-            </div>
-            <div class="mb-2">
-              <textarea class="form-control form-control-sm" id="comment-text" rows="2" placeholder="Your Comment" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-          </form>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-          <h5 class="mb-3">Recent Comments</h5>
-          <div id="comments-list" class="small">
-            <!-- Comments will be dynamically added here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <h2 class="text-center mb-2 display-4 fw-bold">Personalized Menu</h2>
+      <p class="subtitle text-center mb-5">Crafted with the finest Kenyan ingredients</p>
+
+      <div class="menu-category">Appetizers</div>
+      <div class="row g-4 mb-5">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/kikel.jpg" alt="Samosas" class="menu-image">
+            <h3>Samosas</h3>
+            <p>Crispy pastries filled with spiced potatoes, peas, and lentils.</p>
           </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/telet.jpg" alt="Mandazi" class="menu-image">
+            <h3>Mandazi</h3>
+            <p>Traditional Kenyan doughnuts, light and fluffy with cardamom.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/mesob.jpg" alt="Kachumbari" class="menu-image">
+            <h3>Kachumbari</h3>
+            <p>Fresh tomato and onion salad with cilantro and lime dressing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category">Main Courses & Cocktails</div>
+      <div class="row g-4 mb-5">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/kitfo.jpg" alt="Nyama Choma" class="menu-image">
+            <h3>Nyama Choma</h3>
+            <p>Grilled meat marinated in herbs and spices, served with ugali.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/buna.jpg" alt="Ugali" class="menu-image">
+            <h3>Ugali</h3>
+            <p>Traditional maize meal porridge, perfect with stews and meats.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/photo_2025-10-15_21-26-37.jpg" alt="Kenyan Sunrise" class="menu-image">
+            <h3>Kenyan Sunrise</h3>
+            <p>Passion fruit cocktail with vodka, orange juice, and grenadine.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/photo_2025-10-15_21-26-42.jpg" alt="Tusker Lager" class="menu-image">
+            <h3>Tusker Lager</h3>
+            <p>Premium Kenyan beer, crisp and refreshing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category">Desserts & Specials</div>
+      <div class="row g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/sefed.jpg" alt="Mandazi Ice Cream" class="menu-image">
+            <h3>Mandazi Ice Cream</h3>
+            <p>Vanilla ice cream with mandazi crumbles and caramel sauce.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/tebse.jpg" alt="Chapati Wrap" class="menu-image">
+            <h3>Chapati Wrap</h3>
+            <p>Soft flatbread filled with spiced chicken and vegetables.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="menu-item">
+            <img src="img/agelgel.jpg" alt="Chef's Special" class="menu-image">
+            <h3>Chef's Special</h3>
+            <p>Seasonal Kenyan delicacy, ask your server for today's creation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="text-center mb-5 display-4 fw-bold">About Us</h2>
+      <div>
+        <p>Wangari Bar & Restaurant brings authentic Kenyan cuisine and hospitality to Nairobi. Named after Wangari Maathai, we celebrate Kenya's rich culinary heritage with modern elegance.</p>
+        <p>Our menu features traditional dishes like Nyama Choma, Ugali, and Samosas, alongside innovative cocktails inspired by Kenyan flavors. We source the finest ingredients to ensure every meal is a memorable experience.</p>
+        <p>Join us for an unforgettable journey through Kenyan gastronomy in a warm and welcoming atmosphere.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center mb-5 display-4 fw-bold">Contact Us</h2>
+      <div>
+        <p><strong>Phone:</strong> +254 700 123 456</p>
+        <p><strong>Email:</strong> info@wangaribar.com</p>
+        <p><strong>Address:</strong> 123 Moi Avenue, Nairobi CBD, Kenya</p>
+        <p>Follow us on social media for updates and special offers.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours-locations">
+    <div class="container">
+      <h2 class="text-center mb-5 display-4 fw-bold">Hours & Locations</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mb-4">
+          <div class="hours-container">
+            <h3>Operating Hours</h3>
+            <ul class="hours-list">
+              <li><span class="hours-day">Monday - Thursday</span><span class="hours-time">11:00 AM - 10:00 PM</span></li>
+              <li><span class="hours-day">Friday - Saturday</span><span class="hours-time">11:00 AM - 11:00 PM</span></li>
+              <li><span class="hours-day">Sunday</span><span class="hours-time">12:00 PM - 9:00 PM</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 mb-4">
+          <div class="locations-container">
+            <h3>Our Locations</h3>
+            <p><strong>Main Branch:</strong><br>
+            123 Moi Avenue, Nairobi CBD<br>
+            Nairobi, Kenya</p>
+            <p><strong>Westlands Branch:</strong><br>
+            456 Westlands Road<br>
+            Nairobi, Kenya</p>
+            <p class="mt-3"><em>Find us on Google Maps for directions</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservations">
+    <div class="container">
+      <h2 class="text-center mb-5 display-4 fw-bold">Make a Reservation</h2>
+      <form class="reservation-form">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6+ Guests</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="time">Time</label>
+              <select id="time" name="time" required>
+                <option value="">Select time</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="21:00">9:00 PM</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="special-requests">Special Requests</label>
+          <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any special dietary requirements or requests?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Reserve Table</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h5>Contact Us</h5>
+          <p>123 Moi Avenue, Nairobi CBD<br>
+          Nairobi, Kenya<br>
+          Phone: +254 700 123 456<br>
+          Email: info@wangaribar.com</p>
+        </div>
+        <div class="footer-section">
+          <h5>Social & Links</h5>
+          <p>Follow us on social media for updates and special offers.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h5>About Wangari</h5>
+          <p>Wangari Bar & Restaurant brings authentic Kenyan cuisine and hospitality to Nairobi. Named after Wangari Maathai, we celebrate Kenya's rich culinary heritage with modern elegance.</p>
         </div>
       </div>
       <hr class="my-4">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-          <p class="mb-0">&copy; 2023 Wangari Bar and Restaurant. All rights reserved.</p>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-xl-end text-lg-end text-md-end text-sm-center">
-          <div class="social-links">
-            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
+      <div class="text-center">
+        <p class="mb-0">&copy; 2024 Wangari Bar & Restaurant. All rights reserved.</p>
       </div>
     </div>
   </footer>
