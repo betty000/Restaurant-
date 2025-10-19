@@ -4,22 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wangari Bar and Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <i class="fas fa-utensils"></i> Wangari
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#">
+        <i class="fas fa-utensils"></i> Wangari
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <div class="slideshow-container">
@@ -32,56 +46,78 @@
     </section>
 
     <section id="menu">
-      <div>
-        <h2>Our Menu</h2>
-        <div class="menu-grid">
-          <div class="menu-item">
-            <i class="fas fa-bread-slice"></i>
-            <h3>Injera</h3>
-            <p>Sour fermented flatbread, served with various stews.</p>
+      <div class="container">
+        <h2 class="text-center mb-5">Our Menu</h2>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-item">
+              <i class="fas fa-bread-slice"></i>
+              <h3>Injera</h3>
+              <p>Sour fermented flatbread, served with various stews.</p>
+            </div>
           </div>
-          <div class="menu-item">
-            <i class="fas fa-drumstick-bite"></i>
-            <h3>Doro Wat</h3>
-            <p>Spicy chicken stew with hard-boiled eggs, a national dish.</p>
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-item">
+              <i class="fas fa-drumstick-bite"></i>
+              <h3>Doro Wat</h3>
+              <p>Spicy chicken stew with hard-boiled eggs, a national dish.</p>
+            </div>
           </div>
-          <div class="menu-item">
-            <i class="fas fa-utensils"></i>
-            <h3>Tibs</h3>
-            <p>Sautéed beef or lamb with onions, peppers, and spices.</p>
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-item">
+              <i class="fas fa-utensils"></i>
+              <h3>Tibs</h3>
+              <p>Sautéed beef or lamb with onions, peppers, and spices.</p>
+            </div>
           </div>
-          <div class="menu-item">
-            <i class="fas fa-meat"></i>
-            <h3>Kitfo</h3>
-            <p>Minced raw beef marinated in mitmita and niter kibbeh.</p>
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-item">
+              <i class="fas fa-meat"></i>
+              <h3>Kitfo</h3>
+              <p>Minced raw beef marinated in mitmita and niter kibbeh.</p>
+            </div>
           </div>
-          <div class="menu-item">
-            <i class="fas fa-leaf"></i>
-            <h3>Beyainatu</h3>
-            <p>A variety of vegetarian dishes including lentils and vegetables.</p>
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-item">
+              <i class="fas fa-leaf"></i>
+              <h3>Beyainatu</h3>
+              <p>A variety of vegetarian dishes including lentils and vegetables.</p>
+            </div>
           </div>
-          <div class="menu-item">
-            <i class="fas fa-beer"></i>
-            <h3>Tela</h3>
-            <p>Traditional Ethiopian beer, light and refreshing.</p>
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-item">
+              <i class="fas fa-beer"></i>
+              <h3>Tela</h3>
+              <p>Traditional Ethiopian beer, light and refreshing.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="about">
-      <div>
-        <h2>About Us</h2>
-        <p>Wangari Bar and Restaurant brings the rich culinary heritage of Ethiopia to your table. Our dishes are prepared with authentic ingredients and traditional methods, offering a taste of Ethiopia's vibrant culture.</p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center">Wangari Bar and Restaurant brings the rich culinary heritage of Ethiopia to your table. Our dishes are prepared with authentic ingredients and traditional methods, offering a taste of Ethiopia's vibrant culture.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <div>
-        <h2>Contact Us</h2>
-        <p>Address: 123 Addis Ababa St, Ethiopia</p>
-        <p>Phone: +251 123 456 789</p>
-        <p>Email: info@wangarirestaurant.com</p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="text-center">
+              <p><i class="fas fa-map-marker-alt me-2"></i>Address: 123 Addis Ababa St, Ethiopia</p>
+              <p><i class="fas fa-phone me-2"></i>Phone: +251 123 456 789</p>
+              <p><i class="fas fa-envelope me-2"></i>Email: info@wangarirestaurant.com</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -89,17 +125,24 @@
   <button id="prev-slide" class="slide-btn">&larr;</button>
   <button id="next-slide" class="slide-btn">&rarr;</button>
 
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2023 Wangari Bar and Restaurant. All rights reserved.</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2023 Wangari Bar and Restaurant. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="social-links">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
