@@ -1,13 +1,13 @@
-/* Modern Color Palette */
+/* Modern Black Color Palette */
 :root {
-  --primary: #667eea;
-  --secondary: #764ba2;
-  --accent: #f093fb;
-  --dark: #2d3748;
+  --primary: #000000;
+  --secondary: #1a1a1a;
+  --accent: #ffffff;
+  --dark: #000000;
   --light: #f7fafc;
-  --text: #2d3748;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --shadow-hover: rgba(0, 0, 0, 0.2);
+  --text: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --shadow-hover: rgba(0, 0, 0, 0.5);
 }
 
 /* Import Modern Font */
@@ -19,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--text);
-  background: linear-gradient(135deg, var(--light) 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   overflow: hidden;
   line-height: 1.6;
 }
@@ -154,7 +154,7 @@ section.visible {
 
 /* Hero Section */
 #home {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(26, 26, 26, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%), url('img/photo_2025-10-15_21-26-17.jpg') no-repeat center center / cover;
   color: white;
   text-align: center;
   position: relative;
@@ -221,9 +221,21 @@ section.visible {
 
 /* Menu Section */
 #menu {
-  background-color: var(--light);
+  background: url('img/photo_2025-10-15_21-26-33.jpg') no-repeat center center / cover;
   text-align: center;
   padding: 5rem 2rem;
+  position: relative;
+}
+
+#menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: -1;
 }
 
 #menu h2 {
@@ -295,7 +307,7 @@ section.visible {
 
 /* About Section */
 #about {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(26, 26, 26, 0.7) 100%), url('img/photo_2025-10-15_21-26-37.jpg') no-repeat center center / cover;
   color: white;
   text-align: center;
   position: relative;
@@ -308,7 +320,7 @@ section.visible {
   left: 0;
   right: 0;
   height: 100px;
-  background: linear-gradient(to top, var(--light), transparent);
+  background: linear-gradient(to top, #000000, transparent);
 }
 
 #about h2 {
@@ -338,7 +350,7 @@ section.visible {
 
 /* Contact Section */
 #contact {
-  background-color: var(--dark);
+  background: url('img/photo_2025-10-15_21-26-42.jpg') no-repeat center center / cover;
   color: white;
   text-align: center;
   position: relative;
