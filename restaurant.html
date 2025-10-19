@@ -31,6 +31,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -115,6 +118,50 @@
               <p><i class="fas fa-map-marker-alt me-2"></i>Address: 123 Addis Ababa St, Ethiopia</p>
               <p><i class="fas fa-phone me-2"></i>Phone: +251 123 456 789</p>
               <p><i class="fas fa-envelope me-2"></i>Email: info@wangarirestaurant.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-10 col-lg-8 col-md-10 col-sm-12">
+            <h2 class="text-center mb-5">Rate & Review Us</h2>
+
+            <!-- Rating Section -->
+            <div class="rating-section mb-5">
+              <h3 class="text-center mb-3">Rate Our Restaurant</h3>
+              <div class="stars text-center mb-3" id="rating-stars">
+                <i class="far fa-star" data-rating="1"></i>
+                <i class="far fa-star" data-rating="2"></i>
+                <i class="far fa-star" data-rating="3"></i>
+                <i class="far fa-star" data-rating="4"></i>
+                <i class="far fa-star" data-rating="5"></i>
+              </div>
+              <p class="text-center" id="rating-text">Click on the stars to rate us!</p>
+            </div>
+
+            <!-- Comment Section -->
+            <div class="comment-section">
+              <h3 class="text-center mb-3">Leave a Comment</h3>
+              <form id="comment-form" class="mb-4">
+                <div class="mb-3">
+                  <label for="comment-name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="comment-name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="comment-text" class="form-label">Your Comment</label>
+                  <textarea class="form-control" id="comment-text" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Comment</button>
+              </form>
+
+              <div id="comments-list">
+                <h4 class="mb-3">Recent Comments</h4>
+                <!-- Comments will be dynamically added here -->
+              </div>
             </div>
           </div>
         </div>

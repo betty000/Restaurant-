@@ -463,6 +463,74 @@ footer {
   font-size: 1.8rem;
 }
 
+/* Reviews Section Styles */
+#reviews {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: var(--primary);
+  position: relative;
+  border-top: 3px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
+}
+
+.rating-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border: 2px solid #e9ecef;
+  margin-bottom: 2rem;
+}
+
+.comment-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border: 2px solid #e9ecef;
+}
+
+.stars {
+  font-size: 2rem;
+}
+
+.stars i {
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin: 0 0.1rem;
+}
+
+.stars i:hover,
+.stars i.active {
+  color: #ffc107;
+}
+
+.comment-item {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.comment-item .comment-author {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.comment-item .comment-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.comment-item .comment-text {
+  color: #333;
+  line-height: 1.6;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   #home h1 {
