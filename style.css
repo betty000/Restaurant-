@@ -35,6 +35,9 @@ body{
   position:relative;
 }
 
+
+
+
 /* subtle animated second background image */
 body::after{
   content:'';
@@ -139,7 +142,7 @@ section{
 .decorative-line{display:flex;gap:1rem;align-items:center;justify-content:center;margin-bottom:1rem}
 .decorative-line::before,.decorative-line::after{
   content:'';height:2px;width:80px;border-radius:6px;
-  background:linear-gradient(90deg, rgba(0,191,166,0.85), rgba(0,229,255,0.6));
+  background:linear-gradient(90deg, rgba(0,191,166,0.85), rgba(129, 16, 22, 0.6));
 }
 
 /* CTA Buttons */
